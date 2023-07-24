@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Inicia sesión en La 47 FC</title>
+    <link href="/img/favicon.ico" rel="shortcut icon">
+
+
+    <link href="css/common-variables.css" rel="stylesheet" />
+    <link href="css/auth.css" rel="stylesheet" />
+    <link href="css/variables.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+    <div>
+        <div>
+            <div id="kc-content">
+                <div id="kc-content-wrapper">
+                    <style>
+                        @media (min-width: 576px) and (max-width: 1199px) {
+                            .grid-container-image {
+                                background-image: url("/img/auth/bg1.png");
+                            }
+                        }
+
+                        @media (min-width: 576px) {
+                            .image-background {
+                                background-image: url("/img/auth/bg1.png");
+                            }
+                        }
+                        /**
+                        .side-image {
+                            background-image: url("{% static 'api_auth/img/bg2.jpg' %}");
+                        }**/
+                    </style>
+
+                    <div id="kc-form">
+                        <div id="kc-form-wrapper">
+                            <div class="grid-container-image basic-background">
+                                <div class="side-image"></div>
+                                <div class="content-container">
+                                    <div>
+                                        <div>
+                                            <img style="width: 50%;" src="/img/auth/logo-login.png" alt="logo"
+                                                class="logo" />
+                                            
+                                            <div class="info-and-inputs-container">
+                                                <div id="inputs">
+                                                    <h2 style="font-weight: 500;">¡Hola, Bienvenido!</h2>
+                                                    <form action="" method="POST">
+                                                        <div class="inputbox">
+                                                            <input type="text" name="username" class="form-control" required="" placeholder="">
+                                                            <label>Ingresa tu usuario</label>
+                                                        </div>
+                                                        <div class="inputbox">
+                                                            <input type="password" name="password" class="form-control" required="" placeholder="">
+                                                            <label>Contraseña</label>
+                                                            <iconify-icon id="pwShow" icon="ph:eye-slash" style="visibility: hidden;"></iconify-icon>
+                                                        </div>
+                                                        <div>
+                                                            
+                                                        </div>
+                                                        <div class="forget">
+                                                            <a href="#">¿Olvidaste tu contraseña?</a> 
+                                                        </div>
+                                                        <button type="submit" class="btn login-btn">Continuar</button>
+                                                    </form>
+                                                    
+                                                    <!-- Registration Button -->
+
+                                                    <hr class="separator" />
+                                                    <a class="button-container" href="">
+                                                        <button class="btn register-btn">
+                                                            <span>Únete ahora</span>
+                                                        </button>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="external-links-container external-links-container--centered">
+                                                <div class="external-links">
+                                                    <!-- Language Selection --
+                                                    <div id="kc-locale">
+                                                        <div id="kc-locale-wrapper">
+                                                            <div class="icon-dropdown-container" id="kc-locale-dropdown">
+                                                                <i class="fal fa-globe-europe fa-lg"></i>
+                                                                <label>
+                                                                    <select class="dropdown"
+                                                                        onchange="location = this.value;">
+                                                                        <option class="kc-dropdown-item"
+                                                                            value="/auth/realms/fcbayern/login-actions/authenticate?client_id=website&amp;tab_id=aKIF8pwzRk0&amp;execution=ef30ab7f-1cbd-489c-98c3-d37d16ac107f&amp;kc_locale=de">
+                                                                            English
+                                                                        </option>
+                                                                        <option class="kc-dropdown-item"
+                                                                            value="/auth/realms/fcbayern/login-actions/authenticate?client_id=website&amp;tab_id=aKIF8pwzRk0&amp;execution=ef30ab7f-1cbd-489c-98c3-d37d16ac107f&amp;kc_locale=en"
+                                                                            selected="">
+                                                                            Español
+                                                                        </option>
+                                                                    </select>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Language Selection -->
+                                                    <a href="" >Privacidad</a>
+                                                    <a href="" >Contáctanos</a>
+                                                    <a href="home.html">Volver a la web</a>
+                                                </div>
+                                                <div class="derechos">
+                                                    <p>La 47 FC © 2021 Todos los derechos reservados. Designed by <a href="https://www.linkedin.com/in/paolomacias91/" target="_blank">Paolo Macias</a></p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- link to unicons file -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/a63417c082.js" crossorigin="anonymous"></script>
+    <!-- link to js main file -->
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script type="text/javascript" src="js/auth-bg-img.js"></script>
+</body>
+</html>

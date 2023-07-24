@@ -1,0 +1,397 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La 47FC | Website Oficial</title>
+    <!-- Bootstrap initiator 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    
+    <!-- Milan font -->
+    <link href="//db.onlinewebfonts.com/c/42470b72e1438d561b81bd6527debde9?family=MilanTypeRev" rel="stylesheet" type="text/css"/>
+    <!-- icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- Info Section starts -->
+    <div class="top-info">
+        <div class="top-content">
+            <ul class="top-socials">
+                <li>Teléfono: +593 12 345 6789</li>
+                <li>Redes sociales:</li>
+                <li><a href="" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Info Section ends -->
+
+    <!-- Navbar starts -->
+    <header id="navbar">
+        <div class="navbar-elements container">
+            <nav class="navbar-container">
+                <a href="home.html" class="home-link">
+                    <div class="navbar-logo navbar-logo-big">
+                        <img src="img/logo-nav.png" alt="">
+                    </div>
+                </a>
+                <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar" style="width: 40px;"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                    <ul class="navbar-links">
+                        <li class="navbar-item">
+                            <a href="#" class="desktop-item navbar-link" >El club</a>
+                            <input type="checkbox" id="showDrop1">
+                            <div onclick="toggleCheckbox('showDrop1')" class="mobile-item">
+                                <label style="cursor: pointer;">El club</label>
+                                <i class="bi bi-chevron-compact-down arrow-direction"></i>
+                            </div>
+                            <div class="drop-menu-area"></div>
+                            <ul class="drop-menu">
+                                <li class="drop-menu-item"><a href="">Drop menu 1</a></li>
+                                <li class="drop-menu-item"><a href="">Drop menu 2</a></li>
+                                <li class="drop-menu-item"><a href="">Drop menu 3</a></li>
+                                <li class="drop-menu-item"><a href="">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="desktop-item navbar-link">Temporada</a>
+                            <input type="checkbox" id="showDrop2">
+                            <div onclick="toggleCheckbox('showDrop2')"  class="mobile-item">
+                                <label style="cursor: pointer;">Temporada</label>
+                                <i class="bi bi-chevron-compact-down arrow-direction"></i>
+                            </div>
+                            <div class="drop-menu-area"></div>
+                            <ul class="drop-menu">
+                                <li class="drop-menu-item"><a href="schedule.html">Calendario</a></li>
+                                <li class="drop-menu-item"><a href="standings.html">Clasificación</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item"><a class="navbar-link" href="">Tienda</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="contact.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="login-container">
+                <a href="login.html" class="user47"><i class="bi bi-person"></i></a>
+                <a href="login.html" class="btn btn-login"><i class="bi bi-person"></i> mi 47</a>
+
+                <!-- <a href="" class="home-link">
+                    <div class="navbar-user">
+                        <img src="/home_website/static/img/user.png" alt="">
+                    </div>
+                </a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sebastian
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <!-- Navbar ends -->
+    
+    <!-- Banner section begins -->
+    <div id="carouselExampleCaptions" class="carousel banner-container slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-image-wrapper">
+                <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="caption-center d-md-block">
+              <h2>La 47 FC desde 2021</h2>
+              <p>Empezamos este camino por diversión, y ahora es nuestra pasión</p>
+              <a href="" class="btn btn-primary btn-banner">Ver Historia</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-image-wrapper">
+                <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-md-block">
+                <div class="d-flex" style="align-items: flex-end;">
+                    <div class="p-2 w-100" style="text-align: left;">
+                        <h2 style="text-transform: uppercase;">Vamos la banda!</h2>
+                        <p style="margin-bottom: 0;">Conoce de cerca a los jugadores y a quienes formamos la 47FC</p>
+                    </div>
+                    <div class="p-2 flex-shrink-1">
+                        <a href="" class="btn btn-primary btn-banner">Plantilla</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-image-wrapper">
+                <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+              </div>
+            <div class="caption-left d-md-block">
+              <h2>¿Quieres ser parte del club?</h2>
+              <p>Escríbenos si te quieres probar en la 47FC</p>
+              <a href="contact.html" class="btn btn-primary btn-banner">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Banner section ends -->
+
+    <!-- Results & standings section begins -->
+    <div class="results-area container">
+        <div class="results-container">
+            <div class="games">
+                <div class="header-games">
+                    <h5 style="font-weight: bolder;">SIGUIENTE PARTIDO</h5>
+                    <p>Copa Reactivación</p>
+                    <p>15 Jul 2022</p>
+                    <p>19:00</p>
+                </div>
+                <div class="teams" style="font-weight: bolder;">
+                    <div class="team">
+                        <img src="img/logo-nav.png" style="width: 70px; height: 70px;" alt="homeTeam">
+                        <p>La 47FC</p>
+                    </div>
+                    <h3>vs</h3>
+                    <div class="team">
+                        <img src="img/table-teams/valdiviezo.jpg" style="width: 70px; height: 70px;" alt="visitingTeam">
+                        <p>Valdiviezo</p>
+                    </div>
+                </div>
+                <a href="schedule.html">Ver todos los partidos</a>
+            </div>
+            <div class="standings">
+                <div class="header-games">
+                    <h5 style="font-weight: bolder;">TABLA DE POSICIONES</h5>
+                </div>
+                <div class="standing-table">
+                    <table class="table-area">
+                        <thead>
+                            <tr>
+                                <th class="table-header"></th>
+                                <th class="table-header"></th>
+                                <th class="table-header">P</th>
+                                <th class="table-header">GD</th>
+                                <th class="table-header">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="standing-row">
+                                <td class="standing-position">1</td>
+                                <td class="standing-team">
+                                    <div class="team-logo">
+                                        <img src="img/table-teams/NMMA.png" alt="nmma">
+                                        Nmma fc
+                                    </div>
+                                </td>
+                                <td class="standing-value">4</td>
+                                <td class="standing-value">3</td>
+                                <td class="standing-value">9</td>
+                            </tr>
+                            <tr class="standing-row focus-team">
+                                <td class="standing-position">2</td>
+                                <td class="standing-team">
+                                    <div class="team-logo">
+                                        <img src="img/logo-nav.png" alt="la47fc">La 47fc
+                                    </div>
+                                </td>
+                                <td class="standing-value">4</td>
+                                <td class="standing-value">6</td>
+                                <td class="standing-value">8*</td>
+                            </tr>
+                            <tr class="standing-row">
+                                <td class="standing-position">3</td>
+                                <td class="standing-team">
+                                    <div class="team-logo">
+                                        <img src="" alt="team">
+                                        hidro fc
+                                    </div>
+                                </td>
+                                <td class="standing-value">4</td>
+                                <td class="standing-value">8</td>
+                                <td class="standing-value">6</td>
+                            </tr>
+                            <tr class="standing-row">
+                                <td class="standing-position">4</td>
+                                <td class="standing-team">
+                                    <div class="team-logo">
+                                        <img src="" alt="team">
+                                        Sanflo Fc
+                                    </div>
+                                </td>
+                                <td class="standing-value">4</td>
+                                <td class="standing-value">2</td>
+                                <td class="standing-value">6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="standings.html">Ver tabla completa</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Results & standings section end -->
+
+    <!-- accomplishment section begins -->
+    <div class="logros-area">
+        <div class="container">
+            <h3 class="title">Nuestros Logros</h3>
+            <div class="cards-container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="" class="logro-img" alt="Accomplishment">
+                            <div class="overlay">
+                                <a href="" class="btn btn-login">Leer más</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Accomplishment</h5>
+                          <p class="card-text">Add a small text for your Accomplishment</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="" class="logro-img" alt="Accomplishment">
+                            <div class="overlay">
+                                <a href="" class="btn btn-login">Leer más</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Accomplishment</h5>
+                          <p class="card-text">Add a small text for your Accomplishment</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="" class="logro-img" alt="Accomplishment">
+                            <div class="overlay">
+                                <a href="" class="btn btn-login">Leer más</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Accomplishment</h5>
+                          <p class="card-text">Add a small text for your Accomplishment</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- accomplishment section ends -->
+
+    <!-- Sponsors area begins -->
+    <div class="sponsor-area">
+        <div class="container">
+            <h3 class="title sponsors-tittle">Nuestros Patrocinadores</h3>
+            <div class="sponsor-logos-area">
+                <div class="row">
+                    <div class="row-content">
+                        <a href="" class="row-items"><img src="img/sponsors/dental.jpeg" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/yeliyan.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="row-content">
+                        <a href="" class="row-items"><img src="img/sponsors/alispes.jpg" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/doterraBN.jpeg" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/val.png" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/cevallos.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="row-content">
+                        <a href="" class="row-items"><img src="img/sponsors/grupodorado.png" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/new_sound.png" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/sdv.png" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/cardiovital.png" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/pozahonda.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="row-content">
+                        <a href="" class="row-items"><img src="img/sponsors/segurimax1.png" alt=""></a>
+                        <a href="" class="row-items"><img src="img/sponsors/segurimax2.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="row-content">
+                        <a href="" class="row-items"><img src="" alt=""></a>
+                        <a href="" class="row-items"><img src="" alt=""></a>
+                        <a href="" class="row-items"><img src="" alt=""></a>
+                        <a href="" class="row-items"><img src="" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sponsors area ends -->
+
+    <!-- Footer begins -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-container">
+                <span class="footer-hashtag-left">#vamosbanda</span>
+                <img src="img/logo-footer.png" class="footer-logo-icon" alt="la47fc-logo">
+                <span class="footer-hashtag-right">#arribala47FC</span>
+            </div>
+            <div class="footer-social">
+                <h3>la 47 FC en redes Sociales</h3>
+                <ul class="socials">
+                    <li><a href="" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>La 47FC &copy;2021 Todos los derechos reservados. Desarrollado por <a href="https://www.linkedin.com/in/paolomacias91/" target="_blank">Paolo Macias</a></p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <!-- Navbar js -->
+    <script src="js/navbar.js"></script>
+    <script src="js/logo-navbar.js"></script>
+
+    <!-- Overlay on accomplishments images -->
+    <script src="js/logros.js"></script>
+    <!-- Bootstrap 5.3 script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+:root {
+
+    --error-color: #FFCCD5;
+    --info-color: #8AE599;
+    --warning-color: #FFF58C;
+    --error-text-color: #000000;
+    --info-text-color: #000000;
+    --warning-text-color: #000000;
+    --validation-error-color: #DC052D;
+
+    --text-transform: none;
+    --button-border-radius: 3px;
+
+}
